@@ -1,0 +1,52 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f4f6f8;color:#222}
+.topbar{background:#1f2937;color:white;padding:18px 5%;
+display:flex;justify-content:space-between;align-items:center}
+.topbar h2{margin:0 0 5px}
+.topbar span{font-size:14px;color:#d1d5db}
+.container{width:90%;max-width:1100px;margin:25px auto}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card,.panel,.login-box{background:white;border-radius:12px;
+padding:22px;box-shadow:0 3px 12px #00000012}
+.card h3{margin:0 0 10px}
+.card p{font-size:26px;font-weight:bold;margin:0}
+.income{border-left:5px solid #16a34a}
+.expense{border-left:5px solid #dc2626}
+.balance{border-left:5px solid #2563eb}
+.actions{margin:20px 0;display:flex;gap:10px}
+.button,button{display:inline-block;background:#2563eb;color:white;
+border:0;border-radius:7px;padding:10px 16px;text-decoration:none;
+cursor:pointer;font-size:14px}
+.secondary{background:#16a34a}
+.light{background:#e5e7eb;color:#111}
+.logout{color:white;text-decoration:none}
+.panel{margin:20px 0}
+.filter-form{display:flex;gap:10px;flex-wrap:wrap}
+input,select{width:100%;padding:11px;border:1px solid #d1d5db;
+border-radius:7px;margin:6px 0 15px;background:white}
+.filter-form input,.filter-form select{width:auto;margin:0;flex:1}
+form label{display:block;font-weight:bold;margin-top:8px}
+table{width:100%;border-collapse:collapse}
+th,td{padding:12px;border-bottom:1px solid #e5e7eb;text-align:left}
+th{background:#f3f4f6}
+.danger-text{color:#dc2626}
+.tag{padding:5px 9px;border-radius:12px;font-size:12px}
+.tag.income{background:#dcfce7;color:#166534}
+.tag.expense{background:#fee2e2;color:#991b1b}
+.category-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.category-box{padding:15px;background:#f8fafc;border-radius:8px;
+display:flex;justify-content:space-between}
+.alert{padding:12px;border-radius:7px;margin-bottom:15px}
+.error{background:#fee2e2;color:#991b1b}
+.form-container{width:90%;max-width:550px;margin:50px auto}
+.login-page{display:flex;justify-content:center;align-items:center;min-height:100vh}
+.login-box{width:90%;max-width:420px}
+.login-box h1{text-align:center}
+.muted,.hint{color:#6b7280;text-align:center;font-size:14px}
+.center{text-align:center}
+.table-wrap{overflow-x:auto}
+@media(max-width:700px){
+.cards{grid-template-columns:1fr}
+.category-grid{grid-template-columns:1fr 1fr}
+.container{width:94%}
+}
